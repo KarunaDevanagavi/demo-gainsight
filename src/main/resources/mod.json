@@ -1,0 +1,8 @@
+{
+
+  "main":"org.teamn.Controller",
+  "description":"Demo",
+  "developers": ["Subhankar Biswas"],
+  "keywords": ["rabbit", "elasticsearch", "metrics"],
+  "auto-redeploy": true
+}

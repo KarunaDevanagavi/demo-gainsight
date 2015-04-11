@@ -1,0 +1,31 @@
+//curl -XPUT 'localhost:9200/_river/rabbit/_meta' -d '
+{
+  "type" : "rabbitmq",
+  "rabbitmq" : {
+    "host" : "localhost",
+    "port" : 5672,
+    "user" : "guest",
+    "pass" : "guest",
+    "vhost" : "/",
+    "queue" : "elasticsearch",
+    "exchange" : "elasticsearch",
+    "routing_key" : "elasticsearch",
+    "exchange_declare" : true,
+    "exchange_type" : "direct",
+    "exchange_durable" : true,
+    "queue_declare" : true,
+    "queue_bind" : true,
+    "queue_durable" : true,
+    "queue_auto_delete" : false,
+    "heartbeat" : "30m",
+    "qos_prefetch_size" : 0,
+    "qos_prefetch_count" : 10,
+    "nack_errors" : true
+  },
+  "index" : {
+    "bulk_size" : 100,
+    "bulk_timeout" : "10ms",
+    "ordered" : false,
+    "replication" : "default"
+  }
+}

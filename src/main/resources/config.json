@@ -1,0 +1,17 @@
+{
+  "elasticsearch":{
+    "address": "org.teamn.elasticsearch",
+    "transport_addresses": [ { "hostname": "127.0.0.1", "port": 9300 }, { "hostname": "127.0.0.1", "port": 9301 } ],
+    "cluster_name": "elasticsearch_z001h2s",
+    "client_transport_sniff": true,
+    "instance": 1
+    },
+  "rabbit": {
+
+  },
+  "metrics": {
+    "instance": 1,
+    "address": "org.teamn.metrics",
+    "domain": "org.teamn.metrics.domain"
+  }
+}
